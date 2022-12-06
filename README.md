@@ -10,9 +10,7 @@ Styler is very familiar to modern people. This is because it is a home appliance
 Modern people think about what to wear tomorrow. It would be very embarrassing if the brothers or sisters who live with wore imperatively necessary clothes early in the morning and went out. In this case, likewise, this incident occurs because they cannot communicate with each other what to wear the next day.
 
 But what if the company could reserve the time to use Styler in advance? And what if we also had electronic devices to help us share what we're going to wear the next day? In fact, many people recognize the need and usefulness of sharing schedules with each other, and install and use schedule-sharing applications such as To-do-mate app.
-
-Our team devised 'Sleep with Me' that utilizes the advantages of LG mobile TV 'Stand by Me'. Sleep with Me is an app linked to Stand by Me that helps people get comfortable sleep and have regular sleep patterns. In this paper, we look at the current market status that supports Sleep with me's main customer base. Based on this, I will explain the main character of 'Sleep with Me'.
-
+  
 Our team came up with 'Style Reserve' using LG Styler. "Style Reserve" is an app that allows people to communicate and confirm reservations so that they can use the styler at the time they want at work. It is also an app that displays what clothes to wear on the calendar and communicates with each other so that they do not overlap. In this paper, we look at the main customer base of 'Style Reserve' and the current market status. Based on this, I will explain the main role of 'Style Reserve'.
 
   
