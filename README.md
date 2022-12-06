@@ -17,7 +17,7 @@ Our team came up with 'Style Reserve' using LG Styler. "Style Reserve" is an app
 
   
 ## Target Users
-작성중
+We looked at the needs of the major customer base of 'LG Styler', which is successful in business. We focused on three things below. 1) The fact that multiple members can use the Styler in the office at the same time 2) The Styler can be used at any time you want without having to line up in front of the Styler in the office, 3) The fact that there are people at home who share clothes with their family members. So we named the "StyleReserve" in consideration of end-user in that it is a service to provide to those who need to make reservations at Style. The end-user may be an independent at office or an independent at home.
   
 ## Goal
 작성중
