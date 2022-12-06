@@ -21,4 +21,7 @@ d.
 ## Prototype
 
 ## Contributers
-수정중
+#### Heo Jeongyun, 허정윤, Department of Information Systems (https://github.com/jeongyoonHeo) <div>
+#### Kim Taehyeon, 김태현, Department of Information Systems (https://github.com/kimtahen) <div>
+#### Lee Seungho, 이승호, Department of Information Systems (https://github.com/SeunghoL22) <div> 
+#### Park Seeun, 박세은, Department of Information Systems (https://github.com/seeunplayer) <div>
