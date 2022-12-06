@@ -18,11 +18,16 @@ Our team came up with 'Style Reserve' using LG Styler. "Style Reserve" is an app
 We looked at the needs of the major customer base of 'LG Styler', which is successful in business. We focused on three things below. 1) The fact that multiple members can use the Styler in the office at the same time 2) The Styler can be used at any time you want without having to line up in front of the Styler in the office, 3) The fact that there are people at home who share clothes with their family members. So we named the "StyleReserve" in consideration of end-user in that it is a service to provide to those who need to make reservations at Style. The end-user may be an independent at office or an independent at home.
   
 ## Goal
-작성중
-a. 
-b.    
-c.   
-d. 
+
+a. It presents an idea using Styler, an LG home appliance used to manage clothes neatly. Now most offices have Styler. We would like to propose a 'StyleReserve' that allows members of the office to use Styler at any time of their choice.
+
+b. In order to minimize the vacancy of hangers when booking Styler, we would like to propose a function that allows those who use the same course to participate in the reservation together.
+
+c. In the case of using Styler in the family unit, we want to prevent overlapping schedules for family members to wear clothes. It provides a UI that can manage and grasp data such as the date to wear clothes through 'StyleReserve'.
+  
+d. "StyleReserve" will provide a service that informs you of the schedule related to clothes by sending a push notification that recommends booking a styler in advance by informing you of the clothes you will wear the next day in advance.
+
+e. When adding clothes to StyleReserve, it is possible to add them automatically without having to enter all the information related to clothes directly. For products registered with MUSINSA, convenience is provided by automatically registering photos and information of the clothes.
   
 ## Prototype
 제작중…
