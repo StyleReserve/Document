@@ -19,7 +19,8 @@ c.
 d. 
   
 ## Prototype
-
+작성중
+  
 ## Contributers
 #### Heo Jeongyun, 허정윤, Department of Information Systems (https://github.com/jeongyoonHeo) <div>
 #### Kim Taehyeon, 김태현, Department of Information Systems (https://github.com/kimtahen) <div>
