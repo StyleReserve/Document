@@ -469,6 +469,30 @@ Since the user adds a reservation with all the situations set, the reservation c
 \end{figure}
 4) Styler Reservation in case of making new reservation: After selecting a specific date, when users press the "Make a new reservation" button at the bottom of the calendar, a small pop-up window appears. The pop-up window is designed to set the time to reserve, the course to be reserved, and the number of clothes to be reserved. If the user adjusts the contents well and confirm the reservation, the reservation appears as a new box, and if the reservation is continuously added on each day, users can check the reservations on the day at once through scrolling.\\
 
+\subsection{Add Clothes}
+Users can store their clothes in a database built within the Styler and then select them from their closet, and schedule the use of the Styler whenever there is a special schedule. Users can store clothes through searching Musinsa. When the user clicks ‘Save’ button, the contents are delivered to the closet database and saved. Users can check the stored clothes on the ‘My Closet Screen’ and then proceed with the process when they need to make a reservation for the use of a Styler.\\
+
+\begin{itemize}
+    \begin{figure}[htbp]
+    \centerline{\includegraphics[width=3cm]{mycloset_add.png}}
+    \label{fig}
+    \caption{My Closet Screen}
+    \end{figure}
+    \item My Closet Screen: Through 'Add Cloth' button, the user can not only look through clothes that he or she has, but also add new clothes and store them in the database.\\
+    
+    \begin{figure}[htbp]
+    \centerline{
+        \includegraphics[width=3cm]{musinsa_search.png}
+        \includegraphics[width=3cm]{musinsa_result.png}
+        \includegraphics[width=3cm]{musinsa_info_get.png}
+    }
+    \label{fig}
+    \caption{Musinsa Search}
+    \end{figure}
+    \item Search Musinsa: When users clicks 'Add Cloth', then they are moved to the next page which can help them to search some clothes. When users write down some key words that they are trying to search, the service brings the information from Musinsa, and shows the very first 10 results to the user. User can select one of the product and finally can add them in their database. If the search result is not sufficient enough, editing keywords for search is helpful.\\
+
+\end{itemize}
+
 \subsection{Styling Schedule Reservation}
 In addition to booking a Styler, users can also use a system to reserve clothes to use for styling. Styling reservation provides a key function to book clothes that must be worn on important dates such as meetings or weddings on the application, and to receive notifications the day before that date to induce Stylers to be used. Through the notification, the user may act to wear organized clothes on an important day.\\
 
@@ -479,32 +503,21 @@ In addition to booking a Styler, users can also use a system to reserve clothes 
 \end{figure}
 1) Overall Styling Schedule: When the user moves to the Styling Reservation Section, the first calendar that deals with Overall Styling Reservation appears. The calendar displays all reservations for clothes registered in the closet. The user can check whether the reservation is done or not by looking at some dots below the number of the calendar is marked. When the user clicked the special date with a dot below, then the user can check the reservation information.\\
 
-
-2) My Closet Screen: Users can store their clothes in a database built within the Styler and then select them from their closet, and schedule the use of the Styler whenever there is a special schedule.\\
+2) My Closet: User can look through for what clothes to make a reservation in My Closet screen. When the user made the decision, then the user can click specific cloth, and then move to the next page where he or she can make some reservation.\\
 
 \newpage
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=3cm]{mycloset.jpg}}
+\centerline{
+\includegraphics[width=3cm]{clothreserve.jpg}
+\includegraphics[width=3cm]{clothreserve_reason.jpg}
+\includegraphics[width=3cm]{clothreserve_success.jpg}
+}
 \label{fig}
-\caption{My Closet Screen}
+\caption{Cloth Reservation}
 \end{figure}
+3) Book Clothes schedule: To book a cloth schedule, users must have the dress registered in his or her closet by default. Under the condition that clothes are registered in the closet, users can press the clothes they want to make a reservation to go to the styling reservation screen.\\
 
-\begin{itemize}
-    \item Save New Clothes: Users can store clothes in their closets by selecting a product name, brand name, classification of clothes, etc. When the user clicks ‘Save’ button, the contents are delivered to the closet database and saved. Users can check the stored clothes on the ‘My Closet Screen’ and then proceed with the process when they need to make a reservation for the use of a Styler.\\
-    
-    \begin{figure}[htbp]
-    \centerline{
-    \includegraphics[width=3cm]{clothreserve.jpg}
-    \includegraphics[width=3cm]{clothreserve_reason.jpg}
-    \includegraphics[width=3cm]{clothreserve_success.jpg}
-    }
-    \label{fig}
-    \caption{Cloth Reservation}
-    \end{figure}
-    \item Book Clothes schedule: To book a cloth schedule, users must have the dress registered in his or her closet by default. Under the condition that clothes are registered in the closet, users can press the clothes they want to make a reservation to go to the styling reservation screen.\\
-\end{itemize}
-
-3) Styling Reservation Information Screen: As seen on the Styler Reservation Screen, if the user selects a specific date from the calendar, the clothing information reserved on that date appears.
+4) Styling Reservation Information Screen: As seen on the Styler Reservation Screen, if the user selects a specific date from the calendar, the clothing information reserved on that date appears.
 Cloth reservations are designated by date without a concept of time, so multiple people cannot book clothes on a single date. Users can check who made a reservation for the use of the clothes and what is the purpose of the reservation, and if a reservation is not made on the date selected by the other user, the user can proceed with the reservation for the use of the clothes on that date. 
 All reservations are shared among users because people who use the same Styler have the same database, thus preventing mishaps of wearing the same clothes on the same day in advance.\\
 
@@ -564,7 +577,6 @@ The Document repository, it includes Latex code and PDF file of the document of 
 \caption{Repository}
 \end{figure}
 
-\newpage
 \subsection{Module 1: Front-End}
 1) Purpose: We wanted to create a React Native-based application to help users experience their Styler. React Native can develop a cross-platform and has many libraries and functions to utilize, making it easy to develop. It can also be developed by checking the actual execution screen through Expo. Through the application, we connect the user to the server and store the value entered by the user to the back-end. It also receives data from databases provided by the back-end and allows users to view it.\\
 
@@ -572,30 +584,21 @@ The Document repository, it includes Latex code and PDF file of the document of 
 
 3) Location of Source Code:StyleReserve/StyleReserve-Frontend \\
 
-\begin{table} [h]
+\begin{table} [p]
     \begin{tabular}{p{2cm}|p{3cm}|p{2.5cm}}
     \hline
     \textit{\textbf{Directory}} & \textit{\textbf{File Name}} & \textit{\textbf{Modules Used}}\\ \hline
     \begin{tabular}[c]{@{}l@{}}StyleReserve/\\StyleReserve\\-Frontend\end{tabular} & \begin{tabular}[c]{@{}l@{}}App.js\\app.json\\babel.config.js\\babel.config.js\\babel.config.js\\package.json\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}Frontend (React Native)\end{tabular} \\\hline
     
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/assets/\end{tabular} & \begin{tabular}[c]{@{}l@{}}All-icon.png\\Styler-img.png\\adaptive-icon.png\\add-red.png\\add.png\\addpic.png\\back-arrow.png\\big-black-leather.png\\black-leather.png\\blue-dress.png\\bottoms-icon.png\\brown-mustang.png\\check.png\\clock.png\\close.png\\closet.png\\closet-fill.png\\clothes-hanger-white.png\\clothes-hanger.png\\color-notification.png\\down-arrow.png\\dress.png\\dresses-icon.png\\favicon.png\\flitz.png\\group-red.png\\group-white.png\\group.png\\hanger2.png\end{tabular} 
+    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/assets/\end{tabular} & \begin{tabular}[c]{@{}l@{}}All-icon.png\\Styler-img.png\\adaptive-icon.png\\add-red.png\\add.png\\addpic.png\\back-arrow.png\\big-black-leather.png\\black-leather.png\\blue-dress.png\\bottoms-icon.png\\brown-mustang.png\\check.png\\clock.png\\close.png\\closet.png\\closet-fill.png\\clothes-hanger-white.png\\clothes-hanger.png\\color-notification.png\\down-arrow.png\\dress.png\\dresses-icon.png\\favicon.png\\flitz.png\\group-red.png\\group-white.png\\group.png\\hanger2.png\\hawai-shirts.png\\home.png\\homefill.png\\icon-button2.png\\icon-button3.png\\icon.png\\icon5.png\\image-2.png\\left-arrow.png\\logo-grad.png\\logo-white.png\\mainpage-table.png\\mainpage-tshirt.png\\multiple.png\\navy-slacks.png\\notification-black.png\\notification.png\\outline.png\\pants.png\\pink-dress.png\\pink-hoodie.png\\researchicon.png\\reserve.png\\shirt.png\\small-black-leather.png\\splash.png\\timetable.png\\timetable-fill.png\\tops-icon.png\\tshirt.png\\tweed.png\\user.png\\user-fill.png\\wardrobe.jpg\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\\hline
     \end{tabular}
 \end{table}
 
-\begin{table}[p]
+\begin{table}[h]
     \begin{tabular}{p{2cm}|p{3cm}|p{2.5cm}}
     \hline
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/assets/\end{tabular} & \begin{tabular}[c]{@{}l@{}}hawai-shirts.png\\home.png\\homefill.png\\icon-button2.png\\icon-button3.png\\icon.png\\icon5.png\\image-2.png\\left-arrow.png\\logo-grad.png\\logo-white.png\\mainpage-table.png\\mainpage-tshirt.png\\multiple.png\\navy-slacks.png\\notification-black.png\\notification.png\\outline.png\\pants.png\\pink-dress.png\\pink-hoodie.png\\researchicon.png\\reserve.png\\shirt.png\\small-black-leather.png\\splash.png\\timetable.png\\timetable-fill.png\\tops-icon.png\\tshirt.png\\tweed.png\\user.png\\user-fill.png\\wardrobe.jpg\end{tabular} 
-    & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\\hline
-    
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/components/\end{tabular} & \begin{tabular}[c]{@{}l@{}}AddReservation.js\\Addclothfin.js\\Alarmcenterbanner.js\\DropdownList.js\\FindMyPW.js\\HeaderBar.js\\Logout.js\\Moreinfobanner.js\\NavigationBar.js\\NewReservation.js\\\end{tabular} 
-    & \begin{tabular}[c]{@{}l@{}}Frontend (React Native)\end{tabular} \\
-    \hline
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/components/\end{tabular} & \begin{tabular}[c]{@{}l@{}}NumOfClothes.js\\PlusReservation.js\\ReserveDoneBanner.js\\ServiceLogo.js\\SignUpBanner.js\\SignUpPage.js\\StartWith.js\\addclothfin.js\\dropdownlist1.js\\signupbanner2.js\\\end{tabular} 
-    & \begin{tabular}[c]{@{}l@{}}\\Frontend (React Native)\\\end{tabular} \\ \hline
-    
     \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/screens/\end{tabular} & \begin{tabular}[c]{@{}l@{}}AddClothesInfo.js\\EditInfo.js\\FindPassword.js\\FoundPassword.js\\Loading.js\\Login.js\\MainPage.js\\MyCloset.js\\MyPage.js\\OverallStylerReservation.js\\SignUpScreen.js\\StylerReservation.js\\TodayReservation.js\\layout.js\\personalstylingCalendar.js\\reserveclothes.js\end{tabular}
         & \begin{tabular}[c]{@{}l@{}}Frontend (React Native)\end{tabular} \\
     \hline
@@ -621,7 +624,7 @@ The Document repository, it includes Latex code and PDF file of the document of 
     
     \item MyCloset: Provides a service that helps users see their own clothes at a glance. Users can freely add the clothes they want to add through the button to enter new clothes, and press the existing clothes to set a date to wear the clothes and reserve the use of a Styler.\\
     
-    \item AddClothesInfo: Helps users enter information about clothes. If the user wants to add new clothes, go to the window and encourage the user to write information on the input window so that the user can enter the information on the clothes directly, or secure data through an API from Musinsa and store the clothes in a database.\\
+    \item AddClothes: Helps users enter information about clothes. If the user wants to add new clothes, go to the window and encourage the user to write information on the input window so that the user can enter the information on the clothes directly, or secure data through an API from Musinsa and store the clothes in a database.\\
     
     \item layout: basically shows the menu bar at the top and bottom required on the screen. The bar helps the user to move directly to the desired screen regardless of what screen the user is on. At the top, there are a back button and a notification button so that you can return to the previous screen or check the notification you received in real time. The bottom bar allows you to move to Home, Styler Reservation, Styling Reservation, and My Page, respectively.\\
     
@@ -667,8 +670,19 @@ We used React Native with JavaScript. In addition, we continuously tested applic
     \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Backend\\/db/config\end{tabular} & \begin{tabular}[c]{@{}l@{}}config.js\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}path, dotenv\end{tabular} \\
     
+    \hline
+    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Backend\\/db/migrations\end{tabular} & \begin{tabular}[c]{@{}l@{}}\\20221105111111-create\\-stylers.js\\20221105114511-create\\-users.js\\20221110075212-create\\-courses.js\\20221110075529-create\\-sreserves.js\\20221111052600\\-create-srmembers.js\\\end{tabular} 
+    & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\
+    
+    \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table} [h]
+    \begin{tabular}{p{2cm}|p{3cm}|p{2.5cm}}
     \hline 
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Backend\\/db/migrations\end{tabular} & \begin{tabular}[c]{@{}l@{}}20221105111111-create\\-stylers.js\\20221105114511-create\\-users.js\\20221110075212-create\\-courses.js\\20221110075529-create\\-sreserves.js\\20221111052600\\-create-srmembers.js\\20221111063703-create\\-clothes.js\\20221111065544-create\\-creserves.js\end{tabular} 
+    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Backend\\/db/migrations\end{tabular} & \begin{tabular}[c]{@{}l@{}}20221111063703-create\\-clothes.js\\20221111065544-create\\-creserves.js\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\
     
     \hline 
@@ -689,11 +703,13 @@ We used React Native with JavaScript. In addition, we continuously tested applic
 
 4) Class component:
 \begin{itemize}
-    \item routes/Auth: It exchanges data related to user authentication such as membership registration and login. In the user authentication process, issue and use json web token. When logging in, the server issues a json web token to the client, and the client stores it and sends it to the server by including it in the body when requesting post for endpoint.\\
+    \item routes/Auth: It exchanges data related to user authentication such as membership registration and login. In the user authentication process, json web token is issued and used. When logging in, the server issues a json web token to the client, and the client stores it and sends it to the server by including it in the http request body when accessing to each endpoints.\\
     
-    \item routes/Sreserve: It is an endpoint responsible for importing Styler reservation information, adding and deleting new reservations, and adding and deleting existing reservations. The client sends the issued json web token to the body at login with other information, and the server authenticates the user through jwt and sends a response accordingly.\\
+    \item routes/Sreserve: It is an endpoint responsible for obtaining Styler reservation information, adding and deleting new reservations, and adding and deleting members to existing reservations. The client sends the issued json web token in the HTTP request body to access private reserved information, and the server authenticates the user through jwt and sends a response accordingly.\\
     
-    \item routes/Creserve: It is an endpoint in charge of obtaining clothing information and clothing reservation information registered with Styler and adding clothing reservations. The module is responsible for not only clothing reservations, but also adding clothing to the database and additional clothing using the MUSINSA search engine. Likewise, user authentication is performed through the json web token.\\
+    \item routes/Op: This route is responsible for searching clothes through keywords. The client provides keywords to the back-end, and the back-end uses Musinsa search engine to search for clothes, and then provides the results to the client.\\
+    
+    \item routes/Creserve: It is an endpoint in charge of obtaining clothing information and clothing reservation information registered with Styler and adding clothing reservations. The module is responsible for not only clothing reservations, but also adding clothing to the database. Likewise, user authentication is performed through the json web token.\\
 
 \end{itemize}
 
@@ -735,6 +751,7 @@ Because the information we need is closely related to each other, we used SQL, a
     \end{figure}
     \item Clothes: The Clothes table contains id, styler-id, name, brand-name, type. These five variables are essential to register Cloth in the Clothes table. The id is the primary key and is given only one per item. And it helps you identify clothes. The name literally means the product name or name of the clothes, and the user can write it down himself. Brand-name refers to the brand of the product that launched this clothing, and it must also be filled in by the user himself. Type refers to the type of clothing and plays a role in distinguishing whether it is a top or bottom.\\
 
+\newpage
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{creserve.png}}
     \label{fig}
@@ -755,6 +772,7 @@ Because the information we need is closely related to each other, we used SQL, a
     \end{figure}
     \item Courses: Courses table includes id and duration. Here, duration means the time taken per each course, and the time taken according to each course is transmitted so that the user can use it in the process of making a reservation.\\
     
+    \newpage
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{srmembers.png}}
     \label{fig}
@@ -768,7 +786,6 @@ Because the information we need is closely related to each other, we used SQL, a
 \section{Use Cases}
 Below is the overall use case as follows. We found 9 specific use cases while using 'StyleReserve'.\\
 
-\newpage
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=8cm]{UseCase.png}}
 \label{fig}
@@ -794,6 +811,7 @@ User creates an account by entering his or her information of [Username, Email, 
 \subsection{Use Case 3: Find Password}
 Users can find the password set when signing up if they forgot his or her password. When username and email is entered, they are send to the database whether related information is in, and if the existence of the user is valid, then the password set before is send to the email address that the user wrote.\\
 
+\newpage
 \subsection{Use Case 4: Log In}
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{User Login Process.png}}
@@ -803,7 +821,6 @@ Users can find the password set when signing up if they forgot his or her passwo
 The user must enter their e-mail(ID) and password in the email and password fields for Login, respectively. The user enters the information in the fields and then press the login button. If the user’s email and password are established, it is approved and allow the user to move to the main page. If the email and password are not established, the message “login failed” appears, and the user should try another method to log in.\\
     
 \subsection{Use Case 5: Main page - Daily Check}
-\newpage
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{MainPage Process.png}}
     \label{fig}
@@ -836,6 +853,8 @@ This is the main page of StyleReserve. The user can check the overall informatio
 
 \subsection{Use Case 6: Reserve Styler}
 At Styler Reservation, users make reservations based on the time they want to use the Styler, the course they want to use, and the number of clothes to use the Styler. You can basically check the reservations you received by passing today's date to the Database, and if you want to see a reservation for another date, you can select a date from the calendar. Reservations can be made in two ways depending on the reservation status.\\
+
+\newpage
 \begin{itemize}
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{add_reserve.png}}
@@ -855,6 +874,37 @@ At Styler Reservation, users make reservations based on the time they want to us
 \subsection{Use Case 7: Add new cloth to My Closet}
 My Closet brings up the closet of the Styler stored in the database and shows it to the user through the front end. If you have any clothes you want to add in your wardrobe, you will send them to the back-end by filling in the input fields such as the clothing's name, brand, item, etc. Once the product has been successfully added to the database, you can proceed if the product appears on the screen and you wish to schedule a clothing styling schedule in the future.\\
 
+    \begin{itemize}
+    \begin{figure}[htbp]
+    \centerline{\includegraphics[width=5cm]{Musinsaresult.png}}
+    \label{fig}
+    \caption{Musinsa Search Result}
+    \end{figure}
+    \item Musinsa search result is look as follows. The user can check whether clothes that the user want is exist through scrolling screen.\\
+    
+    \begin{figure}[htbp]
+    \centerline{\includegraphics[width=5cm]{search.png}}
+    \label{fig}
+    \caption{Search Musinsa Process}
+    \end{figure}
+    \item When the keyword is entered in the search box, the user can look through some clothes in the result. This is connected with Musinsa, and in the application, the user can see the very first 10 results that is also seen in the Musinsa. If the result is not sufficient, the user can change the keyword and try to look for another 10 most upcomming result.\\
+    
+        \begin{figure}[htbp]
+    \centerline{\includegraphics[width=5cm]{search.png}}
+    \label{fig}
+    \caption{Search Musinsa Process}
+    \end{figure}
+    \item When the keyword is entered in the search box, the user can look through some clothes in the result. This is connected with Musinsa, and in the application, the user can see the very first 10 results that is also seen in the Musinsa. If the result is not sufficient, the user can change the keyword and try to look for another 10 most upcomming result.\\
+    
+    \newpage
+    \begin{figure}[htbp]
+    \centerline{\includegraphics[width=5cm]{newclothdone.png}}
+    \label{fig}
+    \caption{Successfully Add Clothes}
+    \end{figure}
+    \item If the user found his or her cloth, the user can check whether the information written is correct, and then add it in their dataabase. If these process is successful, the popup appears showing that the new cloth that the user select is now can also found in the closet database.\\
+\end{itemize}
+
 \subsection{Use Case 8: Reserve Styling}
 Users can select the clothes they want to reserve for styling in the closet and then move on to the styling reservation system. Styling Schedules, like Styling Schedules, call up a calendar to prompt users to view the schedule history. If a reservation already exists on the date selected by the user, it is designed not to be able to automatically make a reservation. The user writes down the reason for booking the clothes, and the contents are sent to the database and the reservation is successful.\\
 
@@ -867,6 +917,7 @@ Users can select the clothes they want to reserve for styling in the closet and 
     \end{figure}
     \item This is a calendar that shows the total date of the reservation for all the clothes in My Closet. On the day of the reservation, dots are marked below the number, which allows the user to check the approximate status of the reservation. The button at the bottom of the calendar goes to My Closet and helps me check the clothes I have.\\
     
+\newpage
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=4.6cm]{select_cloth.png}}
     \label{fig}
@@ -881,7 +932,6 @@ Users can select the clothes they want to reserve for styling in the closet and 
     \end{figure}
     \item When the user selects a specific outfit, a calendar appears to help the user select the date he or she wants to reserve. The calendar can be moved to the previous and subsequent months through the arrows on both sides. The date on which the reservation has already been made will not be selected as the gray circle is laid against the background. The date the user clicked on is covered with a red circle in the background and helps the user see that they have chosen.\\
     
-    \newpage
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{sr_4.png}}
     \label{fig}
