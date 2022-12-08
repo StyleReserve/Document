@@ -1,6 +1,7 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -108,7 +109,7 @@ Since then, she has consistently contributed to the completeness of the service 
 \begin{itemize}
     \item Increased external activities due to the easing of COVID-19: Due to the lifting of distancing from the easing of COVID-19, many people are enjoying outside life such as festivals and dinners again, and also interest in clothes, which is the basis for enjoying outside and out-of-home life, is growing. According to the research in 2020, the consumption of bags arose from -32.1 percent to 38.1 percent, and clothes from -15 percent to 17.4 percent respectively, showing that people are prepared to go out.\\
     \item Spreading demand for convenience and hygiene: Based on the trend called ‘Pyunrimium’ which is the collaboration of ‘Pyunri’ meaning convenience and ‘Premium’, clothing managers that can easily manage clothes at home without going to a laundry are also attracting consumers' attention. In addition, as consumers' sentiment to keep their clothes clean spreads due to the influence of COVID-19 and fine dust in Korea, the clothing manager market is rapidly growing, and the clothing manager itself is becoming a home trend.\\
-    \item Predicting a Continuous Increase in Demand for Clothing Managers: According to the "Home Appliance Trend Report 2022" released by market research firm Open Survey, Clothing Managers are listed as the No. 1 home appliances that people hope to purchase within the next year. In addition, according to a survey by ‘Daehak Nail’, a famous Korean research institute especially focusing on young trends, both Generation Z and Millennials selected "clothing managers" as household appliances that wants to purchase and replace in the future, and they are especially highly willing to buy Stylers among various clothing managers. This was judged to be a long-term positive demand for clothing management, not a short-term.\\
+    \item Predicting a Continuous Increase in Demand for Clothing Managers: According to the "Home Appliance Trend Report 2022" released by market research firm Open Survey, Clothing Managers are listed as the No. 1 home appliances that people hope to purchase within the next year. In addition, according to a survey by ‘Daehak Nail’, a famous Korean research institute especially focusing on young trends, both Generation Z and Millennial selected "clothing managers" as household appliances that wants to purchase and replace in the future, and they are especially highly willing to buy Stylers among various clothing managers. This was judged to be a long-term positive demand for clothing management, not a short-term.\\
     \item In the process, we decided that Stylers, who were in high demand for suits and other clothing, will be loved by Generation Z, and as a team with Generation Z's eyes, we thought about how the product can provide attractive functions to all members of society.\\
 \end{itemize}
 
@@ -133,20 +134,21 @@ Since then, she has consistently contributed to the completeness of the service 
 As a result, the team wants to propose a new software from a consumer perspective that reflects the trend of LG Electronics' "UP-home appliances" which LG Electronics is currently pushing for, and solves even minor inconveniences for consumers using Stylers.\\
 
 \subsection{Problem Statements}
-First of all, we were able to hear the story from an acquaintance of Generation Z and an Internet post that she was angry because her sister wore her clothes on the day when she planned to wear for the special day in advance. This case was frequently confirmed in a house with sisters or in a family where sisters live together.
+First of all, we were able to hear the story from an acquaintance of Generation Z and an Internet post that she was angry because her sister wore her clothes on the day when she planned to wear for the special day in advance. This case was frequently confirmed in a house with sisters or in a family where sisters live together.\\
 
+\newpage
   \begin{figure}[htbp]
         \centerline{\includegraphics[width=7cm]{언니동생싸움.jpg}}
         \caption{Example of the problem found on the SNS}
         \label{fig}
     \end{figure}
-
-\newpage
 In response, we thought of a system that uses a pre-built closet database within a styling calendar to restrict others from wearing clothes on the same date if someone booked clothes on a specific date already. On top of that, we also thought of a function to induce users to wear neat clothes the next day by sending a notification of the use of an LG Styler the day before the scheduled date.
 
 A total of five tops and one bottom can be placed in the Styler, and the function of the Styler, which runs depending on the type of clothing, takes as little as 30 minutes to as much as 2 hours. Considering the limited number of clothes that can be put in the Styler and the commuting time, our team has come to think that we won't have much time to use the Styler at home on weekdays.
 
-We thought of a situation that we had to use the LG Styler in a hurry within the family unit, and that other people might already be using it. If users are going to use the same course, they can use the Styler together, but since communication was not smooth, they have to activate the Styler twice, wasting time and power. As a result, our team came up with a reservation system that allows other families to use the Styler together by taking clothes from a pre-built closet database and help them to book the use of Styler if there are any seats left. The application also displays a timeline for using the Styler, allowing users to conveniently check and take the available time zone of the Styler.
+We thought of a situation that we had to use the LG Styler in a hurry within the family unit, and that other people might already be using it. If users are going to use the same course, they can use the Styler together, but since communication was not smooth, they have to activate the Styler twice, wasting time and power.
+
+As a result, our team came up with a reservation system that allows other families to use the Styler together by taking clothes from a pre-built closet database and help them to book the use of Styler if there are any seats left. The application also displays a timeline for using the Styler, allowing users to conveniently check and take the available time zone of the Styler.
 
 From this point of view, the problem that occurs in offices that share Stylers is more clear. More people use it together than using at home, which sometimes causes multiple people to flock at the same time. In addition, the Styler is very likely to operate inefficiently when used by multiple individuals, as the capacity of the Styler is limited while the course execution time of the Styler is fixed. Our Styler reservation system can solve these problems intuitively and clearly. If such a function is provided in the future, the use environment of the Styler can be expanded not only at home but also to public places such as offices.
 
@@ -164,9 +166,9 @@ In addition to the main functions mentioned above, we would like to create an LG
 \section{Requirement Analysis}
 
 \subsection{The ability to log in or create an account}
- If the application is not logged in, family members who use the Styler together can create their own account and log in. 
+ If the application is not logged in, family members who use the Styler together can create their own account and log in. \\
 \begin{itemize}
-    \item Sign up: You can log in by setting your email and password.
+    \item Sign up: You can log in by setting your email and password.\\
     \item Sign in: Move to the main page.\\
 \end{itemize}
 
@@ -174,9 +176,9 @@ In addition to the main functions mentioned above, we would like to create an LG
 A logged in account can add an LG Styler to its own account using the Styler's QR code and password. Several people can register as users in the same Styler, so the service is available for families or small members. When you click on the Styler icon, the styling calendar is displayed on the screen.\\
 
 \subsection{Closet database construction function}
-You can configure the closet database by LG Styler. Based on Musinsa, the most well-known fashion platform centered on the MZ generation, information on clothes is retrieved and stored in a database. Because one Styler provides the same database, users who use the same Styler use the same database in the same closet. Once registered, the application can continuously check the clothes, so there is no need to register again.
+You can configure the closet database by LG Styler. Based on Musinsa, the most well-known fashion platform centered on the MZ generation, information on clothes is retrieved and stored in a database. Because one Styler provides the same database, users who use the same Styler use the same database in the same closet. Once registered, the application can continuously check the clothes, so there is no need to register again.\\
 \begin{itemize}
-    \item Enter the product number in the input window of the screen to get information about clothes from Musinsa, the most well-known fashion platform centered on the MZ generation.
+    \item Enter the product number in the input window of the screen to get information about clothes from Musinsa, the most well-known fashion platform centered on the MZ generation.\\
     \item If the item number is not known, the user may directly enter information on the name and item, and store it in the closet.\\
 \end{itemize}
 
@@ -192,9 +194,9 @@ Styler Reservation Calendar: The Styler Reservation Calendar allows users to vie
 You can import and reserve the clothes you want to wear on a specific day in the closet database. Since the reservation of clothes is made by date, no one else can reserve the same clothes on the same day. When you schedule clothes on a specific date, the previous day's notification prompts users to use the Styler.\\
 \begin{itemize}
 \item
-When you select the clothes you want to wear in your closet, the dates you can and cannot make a reservation appear on your calendar.
+When you select the clothes you want to wear in your closet, the dates you can and cannot make a reservation appear on your calendar.\\
 \item
-If you have clothes to wear on December 16th and you don't have any other reservations on that date, you can confirm your reservation by entering the reason why you want to wear them on that date.
+If you have clothes to wear on December 16th and you don't have any other reservations on that date, you can confirm your reservation by entering the reason why you want to wear them on that date.\\
 \item
 On December 16, the day before December 15, users will be notified to put their pre-booked clothes into the Styler.\\
 \end{itemize}
@@ -204,23 +206,23 @@ Users can see at a glance what course they have booked based on today's date and
 
 \section{Development Environment}
 \subsection{Choices of Software Development Platform}
-Our main development environment is Windows. StyleReserve provides a reservation system that adjusts the schedule so that you can use it when you want in an environment where you jointly use LG Stylers such as home and company. As this service is designed to increase convenience in the process of using existing products as part of the function provided by LG ThinQ, we intend to produce it in the form of a mobile application. 
+Our main development environment is Windows. StyleReserve provides a reservation system that adjusts the schedule so that you can use it when you want in an environment where you jointly use LG Stylers such as home and company. As this service is designed to increase convenience in the process of using existing products as part of the function provided by LG ThinQ, we intend to produce it in the form of a mobile application. \\
 
-In this project, we intend to develop the back-end of applications using Node.js runtime and express.js web framework, and create applications using the React Native library and check progress through Expo. And the UI/UX design of the application is to be carried out using Figma. The overall establishment, execution, and process management of the project schedule utilize Notion, and related documents are shared through Google Drive and the project is carried out.
+In this project, we intend to develop the back-end of applications using Node.js runtime and express.js web framework, and create applications using the React Native library and check progress through Expo. And the UI/UX design of the application is to be carried out using Figma. The overall establishment, execution, and process management of the project schedule utilize Notion, and related documents are shared through Google Drive and the project is carried out.\\
 
 \begin{table}[htbp]
 \caption{Development Language and Environment}
 \begin{tabular}{| p{1.7cm}|p{6.4cm} |}
     \hline
-    Tools and Language & Reason \\
+    Tools and Language& Reason \\
     \hline
-    Javascript(JS) & Javascript was originally used mostly in the front-end field for the purpose of implementing dynamic web pages, but since Google's V8 javascript engine-based node.js runtime was developed to enable javascript to run in a non-browser environment, it has become very scalable. Expanding from the existing front-end field, many fields including back-end and applications can be developed through this language.
-    In this project, we want to build a backend and build an application using node.js runtime. Since javascript has a low entry barrier, it is possible to implement the service without difficulty. Therefore, we chose this language to focus on the design, design, and implementation of the service, regardless of the difficulty of the programming language in this project.\\
+    Javascript(JS) & Javascript was originally used mostly in the front-end field for the purpose of implementing dynamic web pages, but since Google's V8 Javascript engine-based node.js runtime was developed to enable Javascript to run in a non-browser environment, it has become very scalable. Expanding from the existing front-end field, many fields including back-end and applications can be developed through this language.
+    In this project, we want to build a back-end and build an application using node.js runtime. Since Javascript has a low entry barrier, it is possible to implement the service without difficulty. Therefore, we chose this language to focus on the design, design, and implementation of the service, regardless of the difficulty of the programming language in this project.\\
     \hline
 \end{tabular}
 \end{table}
 
- \begin{table}[htdp]
+ \begin{table}[htp]
  \caption{Team's Work Environment}
  \begin{tabular}{| p{3cm}|p{5.2cm} |}
  \hline
@@ -237,11 +239,12 @@ In this project, we intend to develop the back-end of applications using Node.js
  \end{tabular}
  \end{table}
 
+\newpage
 \begin{itemize}
     \item Cost Estimation: To implement StyleReserve, it is necessary to obtain information from the server while obtaining data from the database or communicating with the server in real time. Therefore, servers that are hosted in real time or multiple APIs are required. However, we tried to secure open APIs and free servers as much as possible in the current project of developing prototypes as students, and in this process, we were able to actively utilize various tools that were allowed freely for students for a specific period of time.\\
     Currently, free servers are used for prototype development purposes, but if the service has a plan to be officially implemented, problems are likely to arise as server traffic increases and copyright problems arise. Therefore, in the process of official service launch, it is estimated that the need for additional payment will emerge as the payment of paid services is required.\\
     
-    \item Using Any Commercial Cloud Platform: This project uses Amazon Lightsail as a backend server and database. AWS Lightsail is a virtual private server service launched by Amazon that provides low prices and vast amounts of traffic. It has the advantage of simple and clear setup screens such as databases and networking, and can control charging time. Currently, students with student certification are given free access to the service for three months, so it has been decided to use it in this project to develop a prototype model.\\
+    \item Using Any Commercial Cloud Platform: This project uses Amazon Lightsail as a back-end server and database. AWS Lightsail is a virtual private server service launched by Amazon that provides low prices and vast amounts of traffic. It has the advantage of simple and clear setup screens such as databases and networking, and can control charging time. Currently, students with student certification are given free access to the service for three months, so it has been decided to use it in this project to develop a prototype model.\\
     \end{itemize}
 
 \subsection{Software in use}
@@ -257,7 +260,6 @@ In this project, we intend to develop the back-end of applications using Node.js
 \label{fig}
 \caption{Logo of Expo}
 \end{figure}
-\newpage
 2) Expo: Expo is a build tool for developing React Native as a cross-platform, making modules easier to use and test on real-world devices quickly. In order to check whether the prepared React Native code works smoothly, we installed Expo on the mobile phone, and then ran expo on the VSCode to check and proceed.\\
 
 \begin{figure}[htbp]
@@ -265,8 +267,8 @@ In this project, we intend to develop the back-end of applications using Node.js
 \label{fig}
 \caption{Logo of PostgreSQL}
 \end{figure}
-3) PostgreSQL: In this project, the data must have a complex relationship with each other and continue to be modified. Although the NoSQL database shows very good performance compared to RDBMS, we decided to use RDBMS because we need to ensure the integrity of the data relationship rather than performance in this project. We chose PostgreSQL among RDBMS.
-PostgreSQL is an open source object-relational database system (ORDBMS). It was developed based on BSD licenses, so unlike commercial DBMS, there is no license fee. As an open source dbms, stability is guaranteed due to its long development period and continuous versioning, and it supports numerous extensions and data types. In particular, it has a great advantage in that it continues to develop because of its steady updates. Currently, the popularity and demand of PostgreSQL continue to increase, and in this regard, we have decided to use PostgreSQL in our project.\\
+3) PostgreSQL: In this project, the data must have a complex relationship with each other and continue to be modified. Although the NoSQL database shows very good performance compared to RDBMS, we decided to use RDBMS because we need to ensure the integrity of the data relationship rather than performance in this project. We chose PostgreSQL among RDBMS.\\
+PostgreSQL is an open source object-relational database system (ORDBMS). It was developed based on BSD licenses, so unlike commercial DBMS, there is no license fee. As an open source DBMS, stability is guaranteed due to its long development period and continuous versioning, and it supports numerous extensions and data types. In particular, it has a great advantage in that it continues to develop because of its steady updates. Currently, the popularity and demand of PostgreSQL continue to increase, and in this regard, we have decided to use PostgreSQL in our project.\\
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=4cm]{Nodejs.png}}
@@ -290,6 +292,7 @@ PostgreSQL is an open source object-relational database system (ORDBMS). It was 
 \end{figure}
 6) Figma: Figma is a web-based tool that allows anyone to access the same file and exchange feedback with each other with a shared link, regardless of the installation file or OS. Therefore, it was judged as the most effective tool to be used in the project, where everyone had to constantly check the results and share feedback. In addition, as Figma provides convenience in design and color change or shadow effect application, it was judged that it will help a lot in effective UI/UX configuration.\\
 
+\newpage
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=5cm]{Github.png}}
 \label{fig}
@@ -314,18 +317,11 @@ As possible to track changes in computer files, it is effective to prevent confu
 
 \subsection{Task Distribution}
 \begin{table}[htbp]
-\caption{Task Distributions for Each Member}
+\caption{Team Members and Their Tasks}
 \begin{tabular}{| p{1cm}|p{1.5cm}|p{5.2cm} |}
 
 \hline
 Tasks & Name & Description\\
-
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[htbp]
-\begin{tabular}{| p{1cm}|p{1.5cm}|p{5.2cm} |}
 
 \hline
 Front-end Developer & Heo JeongYoon, Park SeEun, Kim Taehyeon & The front-end developer is simply the job of developing everything the user sees. Since t it is the first part of the customer's search and use of service information, front-end can also be defined as the first impression of the application. We check the responses of customers and users, determine how to find solutions quickly.
@@ -336,15 +332,16 @@ In general, people who have a lot of experience using services from the user's p
 Back-end Developer & Kim TaeHyeon, Lee SeungHo & The back-end developer is responsible for implementing the overall business logic of all services, analyzing and improving existing systems, and continuing research and learning about new systems. Back-end developers can develop a service's business logic and gain an overall experience with web services through database integration and architecture. With a lot of interest in databases and DB management and system architectures, you can even gain experience to expand your knowledge through various platforms, infrastructure, and network experiences. Although risks to Incidents may be born in the process of development, it is judged that risks can be minimized through sufficient development verification, vulnerability check, code review, and CI. In addition, these plans are developed later so that they can be realized through code implementation. Moreover, he keeps track on the function by continuously checking whether these codes are operated effectively based on feedback from users and consumers.\\
 
 \hline
-UI/UX Designer & Park SeEun, Heo JeongYoon & The UI/UX designer is responsible for service planning and design using methodology, which is the first step in app front development. This job performs an in-depth analysis of the service from the planning stage and repeat steps such as user research, hypothesis verification, and wireframe design to make the service more complete. Before launching the web and app services, flow verification and usability testing using wireframes are conducted, and afterwards, prototypes are produced based on improved flows, and design is carried out in earnest.
-Distinguish UI and UX design tasks in detail, UX designers are interested in how they feel about the product and try many different approaches to solve specific user problems. The most important responsibility for UX designers is to ensure that the product moves from one stage to the next. Unlike UX designers, UI designers are more interested in how to place products. UI designers are responsible for designing each screen and page so that users can interact properly based on UX, as well as creating a style guide and applying consistent design representations according to the product. \\
-\hline
+UI/UX Designer & Park SeEun, Heo JeongYoon & The UI/UX designer is responsible for service planning and design using methodology, which is the first step in app front development. This job performs an in-depth analysis of the service from the planning stage and repeat steps such as user research, hypothesis verification, and wire frame design to make the service more complete. Before launching the web and app services, flow verification and usability testing using wire frames are conducted, and afterwards, prototypes are produced based on improved flows, and design is carried out in earnest.
+Distinguish UI and UX design tasks in detail, UX designers are interested in how they feel about the product and try many different approaches to solve specific user problems. The most important responsibility for UX designers is to ensure that the product moves from one stage to the next. Unlike UX designers, UI designers are more interested in how to place products. UI designers are responsible for designing each screen and page so that users can interact properly based on UX, as well as creating a style guide and applying consistent design representations according to the product.\\
 
+\hline
 \end{tabular}
 \end{table}
 
+\newpage
 \section{Specifications}
-StyleReserve provides users a variety of reservation features that they need while using the LG Styler. When a user who is stored in the database accesses the application, three functions are given as follows.
+StyleReserve provides users a variety of reservation features that they need while using the LG Styler. When a user who is stored in the database accesses the application, three functions are given as follows.\\
 
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=9cm]{서비스흐름도.png}}
@@ -412,9 +409,9 @@ This is a flowchart of the overall screen that constitutes the application. Afte
 \caption{Find Password Screen}
 \label{fig}
 \end{figure}
-2-2) Find Password Screen: If the user forgets password, then user can go to the 'Find Password' page and can check what the password was. 
+2-2) Find Password Screen: If the user forgets password, then user can go to the 'Find Password' page and can check what the password was. \\
 \begin{itemize}
-    \item Insert Information: When the user enters the username and email and click the 'Find password' button, the password is send to the email the user wrote.
+    \item Insert Information: When the user enters the username and email and click the 'Find password' button, the password is send to the email the user wrote.\\
     \item Go back to Login: A button appears with a message that the password the user entered at the time of signing up has been sent to the e-mail address. The button allows the user to return to the login screen. Users can check the password from the email address they entered with Username, and can log in.\\
 \end{itemize}
 
@@ -426,15 +423,18 @@ This is a flowchart of the overall screen that constitutes the application. Afte
 \end{figure}
 1) Main page: Successful login will leads the user to go to the main screen. When the main screen turns on, the two biggest features - 'Schedule Styler' and 'Schedule Styling' - can be seen, and if the user presses that button, then the user will be taken to the page where each function is available.
 In addition, on the main page, the page shows the most recently planned Styler and Styling schedule. Users can check the information at a glance without having to go to another page.
-From the main screen, the navigation bar is fixed within the application, so users can efficiently navigate to the page they want.
+From the main screen, the navigation bar is fixed within the application, so users can efficiently navigate to the page they want.\\
+
+\newpage
 \begin{itemize}
-    \item Recent Reservation: It displays the schedule closest to the current time. The Styler reservation section contains the courses user wish to use with a big letter, and the date and time of the reservation and the estimated course time are written at the bottom. The styling reservation shows the reservation for the nearest date of the upcoming reservation, stating the date on which the clothes were booked, the purpose for which the clothes were booked, and whether you would receive the previous day's alarm.
+    \item Recent Reservation: It displays the schedule closest to the current time. The Styler reservation section contains the courses user wish to use with a big letter, and the date and time of the reservation and the estimated course time are written at the bottom. The styling reservation shows the reservation for the nearest date of the upcoming reservation, stating the date on which the clothes were booked, the purpose for which the clothes were booked, and whether you would receive the previous day's alarm.\\
     \item Navigation Bar: This is designed to go directly to Main Page, Styler Reservation, Styling Reservation, My Page. Users can click the icon for each page to go directly to the page they want.\\
 \end{itemize}
 
 \subsection{Styler Schedule Reservation}
 The Styler Reservation is a function that allow users to reserve LG Styler in the situation where multiple people share a single Styler together. The database stores information about courses, reservations, people booked together, and information about the number of clothes that are stored at each date and time. On the screen, when a user selects a desired reservation date from the calendar, all reservation information scheduled for that day is retrieved and displayed, and a new reservation, or additional reservation, is encouraged.\\
 
+\newpage
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=3cm]{Today's reserve.png}}
 \label{fig}
@@ -448,10 +448,9 @@ If the user select a specific date, then the user can check the scheduled time o
 \label{fig}
 \caption{Add to Existing Reservation Screen}
 \end{figure}
-2) Styler Reservation in case of hangers left: If there is ① an existing reservation on the date and time that the user wants to use, ② the reserved course is that the user wanted, and ③ there are seats left inside the styler, then the reservation can be made by adding the number of clothes to the existing Styler reservation. It increases efficiency by preventing overlapping with other users when users try to make a reservation at a specific time or allowing them to manage clothes together if the types of clothes are the same.
+2) Styler Reservation in case of hangers left: If there is ① an existing reservation on the date and time that the user wants to use, ② the reserved course is that the user wanted, and ③ there are seats left inside the Styler, then the reservation can be made by adding the number of clothes to the existing Styler reservation. It increases efficiency by preventing overlapping with other users when users try to make a reservation at a specific time or allowing them to manage clothes together if the types of clothes are the same.
 Since the user adds a reservation with all the situations set, the reservation can be added by simply entering the number of clothes. By pressing the "Add Booking" button, the user can confirm that his or her reservation has proceeded correctly as the number of clothes reserved for the existing reservation and the list of reservations are modified.\\
 
-\newpage
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=3cm]{alreadydonereserve.jpg}}
 \label{fig}
@@ -478,17 +477,20 @@ In addition to booking a Styler, users can also use a system to reserve clothes 
 \label{fig}
 \caption{Overall Styling Reservation}
 \end{figure}
-1) Overall Styling Schedule: When the user moves to the Styling Reservation Section, the first calendar that deals with Overall Styling Reservation appears. The calendar displays all reservations for clothes registered in the closet. The mark can be checked whether the dot below the number of the calendar is marked.
+1) Overall Styling Schedule: When the user moves to the Styling Reservation Section, the first calendar that deals with Overall Styling Reservation appears. The calendar displays all reservations for clothes registered in the closet. The user can check whether the reservation is done or not by looking at some dots below the number of the calendar is marked. When the user clicked the special date with a dot below, then the user can check the reservation information.\\
 
+
+2) My Closet Screen: Users can store their clothes in a database built within the Styler and then select them from their closet, and schedule the use of the Styler whenever there is a special schedule.\\
+
+\newpage
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=3cm]{mycloset.jpg}}
 \label{fig}
 \caption{My Closet Screen}
 \end{figure}
-2) My Closet Screen: Users can store their clothes in a database built within the Styler and then select them from their closet, and schedule the use of the Styler whenever there is a special schedule.\\
 
 \begin{itemize}
-    \item Save New Clothes: Users can store clothes in their closets by selecting a product name, brand name, classification of clothes, etc. When the user clicks ‘Save’ button, the contents are delivered to the closet database and saved. Users can check the stored clothes on the ‘My Closet Screen’ and then proceed with the process when they need to make a reservation for the use of a Styler.
+    \item Save New Clothes: Users can store clothes in their closets by selecting a product name, brand name, classification of clothes, etc. When the user clicks ‘Save’ button, the contents are delivered to the closet database and saved. Users can check the stored clothes on the ‘My Closet Screen’ and then proceed with the process when they need to make a reservation for the use of a Styler.\\
     
     \begin{figure}[htbp]
     \centerline{
@@ -502,16 +504,17 @@ In addition to booking a Styler, users can also use a system to reserve clothes 
     \item Book Clothes schedule: To book a cloth schedule, users must have the dress registered in his or her closet by default. Under the condition that clothes are registered in the closet, users can press the clothes they want to make a reservation to go to the styling reservation screen.\\
 \end{itemize}
 
-3) Styling Reservation Information Screen: As seen on the Styler Reservation Screen, if the user selects a specific date from the calendar, the clothing information reserved on that date appears. Cloth reservations are designated by date without a concept of time, so multiple people cannot book clothes on a single date. Users can check who made a reservation for the use of the clothes and what is the purpose of the reservation, and if a reservation is not made on the date selected by the other user, the user can proceed with the reservation for the use of the clothes on that date. All reservations are shared among users because people who use the same Styler have the same database, thus preventing mishaps of wearing the same clothes on the same day in advance.\\
+3) Styling Reservation Information Screen: As seen on the Styler Reservation Screen, if the user selects a specific date from the calendar, the clothing information reserved on that date appears.
+Cloth reservations are designated by date without a concept of time, so multiple people cannot book clothes on a single date. Users can check who made a reservation for the use of the clothes and what is the purpose of the reservation, and if a reservation is not made on the date selected by the other user, the user can proceed with the reservation for the use of the clothes on that date. 
+All reservations are shared among users because people who use the same Styler have the same database, thus preventing mishaps of wearing the same clothes on the same day in advance.\\
 
-\newpage
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=3cm]{Cloth reservation.png}}
 \label{fig}
 \caption{Appointment Information Screen}
 \end{figure}
 \begin{itemize}
-    \item Clothes Appointment: The appointment date is fixed for the date of the user’s choice. The user enters the reason why the user is trying reserve the clothes.
+    \item Clothes Appointment: The appointment date is fixed for the date of the user’s choice. The user enters the reason why the user is trying reserve the clothes.\\
 \end{itemize}
     
 \begin{figure}[htbp]
@@ -523,7 +526,6 @@ In addition to booking a Styler, users can also use a system to reserve clothes 
     \item Styler Usage Notification: Notifications are delivered to users that induce them to use the Styler the day before they are scheduled to wear clothes. The notification can be found on the Notification Page located on the top bar. The notification states that the user has reserved clothes for some purpose and therefore needs to use a Styler. The notification allows users to use a Styler and go to an important schedule the next day in neat clothes.\\
 \end{itemize}
 
-\newpage
 \subsection{My Page}
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=3cm]{My Page.png}}
@@ -553,15 +555,16 @@ The second module is the back-end that interacts with the database. We used node
 The third module is the server. We've built a server with AWS Lightsail to allow the overall process to proceed. Node.js contains code that allows users to respond to requests generated while using the application, and allows the server to generate query statements based on the parameters of the request to read or write data.\\
 
 \subsection{Directory Organization}
-StyleReserve is composed with three Github repositories, which are StyleReserve front-end, StyleReserve back-end, and Document. In StyleReserve front-end repository, files related to the overall design and fuctions to interact with users of the application is in.
+StyleReserve is composed with three Github repositories, which are StyleReserve front-end, StyleReserve back-end, and Document. In StyleReserve front-end repository, files related to the overall design and functions to interact with users of the application is in.
 In StyleReserve back-end repository, it has files that work with the repository and database.
-The Document repository, it includes Latex code and PDF file of the document of this project.
+The Document repository, it includes Latex code and PDF file of the document of this project.\\
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=7cm]{repository.png}}
+\centerline{\includegraphics[width=6cm]{repository.png}}
 \label{fig}
 \caption{Repository}
 \end{figure}
 
+\newpage
 \subsection{Module 1: Front-End}
 1) Purpose: We wanted to create a React Native-based application to help users experience their Styler. React Native can develop a cross-platform and has many libraries and functions to utilize, making it easy to develop. It can also be developed by checking the actual execution screen through Expo. Through the application, we connect the user to the server and store the value entered by the user to the back-end. It also receives data from databases provided by the back-end and allows users to view it.\\
 
@@ -576,16 +579,16 @@ The Document repository, it includes Latex code and PDF file of the document of 
     \begin{tabular}[c]{@{}l@{}}StyleReserve/\\StyleReserve\\-Frontend\end{tabular} & \begin{tabular}[c]{@{}l@{}}App.js\\app.json\\babel.config.js\\babel.config.js\\babel.config.js\\package.json\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}Frontend (React Native)\end{tabular} \\\hline
     
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/assets/\end{tabular} & \begin{tabular}[c]{@{}l@{}}All_icon.png\\Styler_img.png\\adaptive-icon.png\\add-red.png\\add.png\\addpic.png\\back-arrow.png\\big-black-leather.png\\black-leather.png\\blue-dress.png\\bottoms_icon.png\\brown-mustang.png\\check.png\\clock.png\\close.png\\closet.png\\closet_fill.png\\clothes-hanger-white.png\\clothes-hanger.png\\color-notification.png\\down-arrow.png\\dress.png\\dresses_icon.png\\favicon.png\\flitz.png\\group-red.png\\group-white.png\\group.png\\hanger2.png\\hawai-shirts.png\\home.png\\home_fill.png\\icon-button2.png\\icon-button3.png\end{tabular} 
+    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/assets/\end{tabular} & \begin{tabular}[c]{@{}l@{}}All-icon.png\\Styler-img.png\\adaptive-icon.png\\add-red.png\\add.png\\addpic.png\\back-arrow.png\\big-black-leather.png\\black-leather.png\\blue-dress.png\\bottoms-icon.png\\brown-mustang.png\\check.png\\clock.png\\close.png\\closet.png\\closet-fill.png\\clothes-hanger-white.png\\clothes-hanger.png\\color-notification.png\\down-arrow.png\\dress.png\\dresses-icon.png\\favicon.png\\flitz.png\\group-red.png\\group-white.png\\group.png\\hanger2.png\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\\hline
     \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[p]
     \begin{tabular}{p{2cm}|p{3cm}|p{2.5cm}}
     \hline
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/assets/\end{tabular} & \begin{tabular}[c]{@{}l@{}}icon.png\\icon5.png\\image-2.png\\left-arrow.png\\logo-grad.png\\logo-white.png\\mainpage-table.png\\mainpage-tshirt.png\\multiple.png\\navy-slacks.png\\notification-black.png\\notification.png\\outline.png\\pants.png\\pink-dress.png\\pink-hoodie.png\\researchicon.png\\reserve.png\\shirt.png\\small-black-leather.png\\splash.png\\timetable.png\\timetable_fill.png\\tops_icon.png\\tshirt.png\\tweed.png\\user.png\\user_fill.png\\wardrobe.jpg\end{tabular} 
-    & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\ \hline
+    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/assets/\end{tabular} & \begin{tabular}[c]{@{}l@{}}hawai-shirts.png\\home.png\\homefill.png\\icon-button2.png\\icon-button3.png\\icon.png\\icon5.png\\image-2.png\\left-arrow.png\\logo-grad.png\\logo-white.png\\mainpage-table.png\\mainpage-tshirt.png\\multiple.png\\navy-slacks.png\\notification-black.png\\notification.png\\outline.png\\pants.png\\pink-dress.png\\pink-hoodie.png\\researchicon.png\\reserve.png\\shirt.png\\small-black-leather.png\\splash.png\\timetable.png\\timetable-fill.png\\tops-icon.png\\tshirt.png\\tweed.png\\user.png\\user-fill.png\\wardrobe.jpg\end{tabular} 
+    & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\\hline
     
     \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/components/\end{tabular} & \begin{tabular}[c]{@{}l@{}}AddReservation.js\\Addclothfin.js\\Alarmcenterbanner.js\\DropdownList.js\\FindMyPW.js\\HeaderBar.js\\Logout.js\\Moreinfobanner.js\\NavigationBar.js\\NewReservation.js\\\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}Frontend (React Native)\end{tabular} \\
@@ -596,6 +599,7 @@ The Document repository, it includes Latex code and PDF file of the document of 
     \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Frontend\\/screens/\end{tabular} & \begin{tabular}[c]{@{}l@{}}AddClothesInfo.js\\EditInfo.js\\FindPassword.js\\FoundPassword.js\\Loading.js\\Login.js\\MainPage.js\\MyCloset.js\\MyPage.js\\OverallStylerReservation.js\\SignUpScreen.js\\StylerReservation.js\\TodayReservation.js\\layout.js\\personalstylingCalendar.js\\reserveclothes.js\end{tabular}
         & \begin{tabular}[c]{@{}l@{}}Frontend (React Native)\end{tabular} \\
     \hline
+    
     \end{tabular}
 \end{table}
 
@@ -603,11 +607,11 @@ The Document repository, it includes Latex code and PDF file of the document of 
 \begin{itemize}
     \item Loading: It shows StyleReserve logo during the loading time before the application starts. Since the information of the user is unknown, after loading, the screen moves to the login page.\\
     
-    \item Login: It helps users to log in to the service. It provides input fields for e-mail and password with the StyleReservation logo. When the user fills out the email and password fields and presses the ’Login’ button, the user input value is delivered to backend and frontend requests login, and when the backend successfully figured out that the user writes the correct information, then the user is delivered to Main page. At the bottom, there are 'Sign Up' and 'Find Password' buttons, so that users can get in to the service by setting some information, or find what the user set as password.\\
+    \item Login: It helps users to log in to the service. It provides input fields for e-mail and password with the StyleReservation logo. When the user fills out the email and password fields and presses the ’Login’ button, the user input value is delivered to back-end and front-end requests login, and when the back-end successfully figured out that the user writes the correct information, then the user is delivered to Main page. At the bottom, there are 'Sign Up' and 'Find Password' buttons, so that users can get in to the service by setting some information, or find what the user set as password.\\
     
-    \item Sign Up: If the user is first to use the service, it provides input fields of username, email, password, and password confirm. If the user wrote the email address that already exists in the account database or wrote different text in password and password confirm, then signing up is declined by the backend. If everything is correctly written down, then the backend stores the information, and the frontend shows the message that the user is successfully signed up, and move them to the login page.\\
+    \item Sign Up: If the user is first to use the service, it provides input fields of username, email, password, and password confirm. If the user wrote the email address that already exists in the account database or wrote different text in password and password confirm, then signing up is declined by the back-end. If everything is correctly written down, then the back-end stores the information, and the front-end shows the message that the user is successfully signed up, and move them to the login page.\\
     
-    \item FindPassword: It helps users who forgot their password for some reasons to find their password that they wrote while signing up. It provides input fields of username and email, and if they wrote it correctly, then the backend check whether the matched information exists, and send the password to the email address that user wrote.\\
+    \item FindPassword: It helps users who forgot their password for some reasons to find their password that they wrote while signing up. It provides input fields of username and email, and if they wrote it correctly, then the back-end check whether the matched information exists, and send the password to the email address that user wrote.\\
     
     \item FoundPassword: After the password is sent to the address, screen moves to this page, which says "Your password is sent to the email address that you wrote. Now, let's move to the login page". If the user clicks the button "Go back to Login Page", then the user comes back to the login page, and after checking password that the user forgot, user can successfully log in.\\
     
@@ -615,11 +619,11 @@ The Document repository, it includes Latex code and PDF file of the document of 
     
     \item Today Reservation: A quick look at the Styler bookings that have been booked throughout the day. Using the built-in time function, we receive today's date and basically show today's reservations. If you want to check reservations for other dates or add reservations, you can scroll through the calendar at the top to expand the size, and then select the desired date to move.\\
     
-    \item MyCloset: Provides a service that helps users see their own clothes at a glance. Users can freely add the clothes they want to add through the button to enter new clothes, and press the existing clothes to set a date to wear the clothes and reserve the use of a styler.
+    \item MyCloset: Provides a service that helps users see their own clothes at a glance. Users can freely add the clothes they want to add through the button to enter new clothes, and press the existing clothes to set a date to wear the clothes and reserve the use of a Styler.\\
     
-    \item AddClothesInfo: Helps users enter information about clothes. If the user wants to add new clothes, go to the window and encourage the user to write information on the input window so that the user can enter the information on the clothes directly, or secure data through an API from Musinsa and store the clothes in a database.
+    \item AddClothesInfo: Helps users enter information about clothes. If the user wants to add new clothes, go to the window and encourage the user to write information on the input window so that the user can enter the information on the clothes directly, or secure data through an API from Musinsa and store the clothes in a database.\\
     
-    \item layout: basically shows the menu bar at the top and bottom required on the screen. The bar helps the user to move directly to the desired screen regardless of what screen the user is on. At the top, there are a back button and a notification button so that you can return to the previous screen or check the notification you received in real time. The bottom bar allows you to move to Home, Styler Reservation, Styling Reservation, and My Page, respectively.
+    \item layout: basically shows the menu bar at the top and bottom required on the screen. The bar helps the user to move directly to the desired screen regardless of what screen the user is on. At the top, there are a back button and a notification button so that you can return to the previous screen or check the notification you received in real time. The bottom bar allows you to move to Home, Styler Reservation, Styling Reservation, and My Page, respectively.\\
     
     \item MyPage: You can check your name and email. In addition, if you want to stop using the service, you can log out of the service by pressing the 'Logout' button. If you press the logout button, you will be taken to the login page with a notification that you have successfully logged out.\\
 \end{itemize}
@@ -631,7 +635,7 @@ We used React Native with JavaScript. In addition, we continuously tested applic
 
 
 \subsection{Module 2: Server}
-1) Purpose: The backend server waits for requests from applications and manages and responds to the database, such as providing data read from the database when a function invokes the server. The values entered at the front end are stored in the database and managed continuously. The back-end server takes all the necessary data from the DB and delivers it to the React Native and StyleReserve applications.\\
+1) Purpose: The back-end server waits for requests from applications and manages and responds to the database, such as providing data read from the database when a function invokes the server. The values entered at the front end are stored in the database and managed continuously. The back-end server takes all the necessary data from the DB and delivers it to the React Native and StyleReserve applications.\\
 
 2) Functionality: The server calculates, organizes, and stores information transmitted from the application in a database. In addition, when an application's function requests a specific value, it takes the necessary data from the database and returns it in addition to the request.\\
 
@@ -676,7 +680,7 @@ We used React Native with JavaScript. In addition, we continuously tested applic
     & \begin{tabular}[c]{@{}l@{}}winston, winston-daily\\-roate-file, process,\\dotenv\end{tabular} \\
     
     \hline 
-    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Backend\\/node_modules\end{tabular} & \begin{tabular}[c]{@{}l@{}}...\end{tabular} 
+    \begin{tabular}[c]{@{}l@{}}StyleReserve\\-Backend\\/node-modules\end{tabular} & \begin{tabular}[c]{@{}l@{}}...\end{tabular} 
     & \begin{tabular}[c]{@{}l@{}}-\end{tabular} \\
     
     \hline
@@ -693,7 +697,7 @@ We used React Native with JavaScript. In addition, we continuously tested applic
 
 \end{itemize}
 
-5) Where it is taken from: The backend sends and receives data from the front end, and the database. The foundation is a server provided by AWS Lightsail, which is used in this project because it allows simple server operations at a low cost.\\
+5) Where it is taken from: The back-end sends and receives data from the front end, and the database. The foundation is a server provided by AWS Lightsail, which is used in this project because it allows simple server operations at a low cost.\\
 
 6) How and why we use it: By connecting users and databases through a back-end server, users could exchange information with databases through applications, and the server could connect all of them. As we decided to use JavaScript in React Native, we used node.js and express.js for flexible development.\\
 
@@ -706,17 +710,16 @@ Because the information we need is closely related to each other, we used SQL, a
 3) Location of Source Code : StyleReserve-Backend/ db/models/\\
 
 4) Class Components:
-\newpage
 \begin{itemize}
 
-    \item This is where you create the initial configuration files for the tables that will be generated by module sort.js. sequelize creates a database or tables in the language of javascript without creating a sql statement directly. The contents of this file must define the relationship between tables. You have to set what the primary key is and what the foreign key is, and you have to set whether it is an N:1 relationship or a 1:1 relationship. If you write it well including such contents, the sequelize module automatically creates and manages the database in postgreSQL. In the initial development test phase, we used sqlite as well as postgreSQL, which was very easy because it was possible to move by changing just one word.\\
+    \item This is where you create the initial configuration files for the tables that will be generated by module sort.js. sequelize creates a database or tables in the language of javascript without creating a sql statement directly. The contents of this file must define the relationship between tables. You have to set what the primary key is and what the foreign key is, and you have to set whether it is an N:1 relationship or a 1:1 relationship. If you write it well including such contents, the sequelize module automatically creates and manages the database in postgreSQL. In the initial development test phase, we used SQLite as well as postgreSQL, which was very easy because it was possible to move by changing just one word.\\
 
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{stylers.png}}
     \label{fig}
     \caption{Styler Table}
     \end{figure}
-    \item Stylers: The Styler table contains id, serial-num, auth-key. These three variables are essential to be registered in the Styler table. The id is primary Key and only one is given to one LG Styler Hardware. And this helps you identify Styler. Serial-num refers to a number that is uniquely assigned to each LG Stryer device and must be registered in the database.Auth-key helps you use it to identify the styler in the auth API and log in.\\
+    \item Stylers: The Styler table contains id, serial-num, auth-key. These three variables are essential to be registered in the Styler table. The id is primary Key and only one is given to one LG Styler Hardware. And this helps you identify Styler. Serial-num refers to a number that is uniquely assigned to each LG Styler device and must be registered in the database.Auth-key helps you use it to identify the Styler in the auth API and log in.\\
     
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{users.png}}
@@ -757,18 +760,20 @@ Because the information we need is closely related to each other, we used SQL, a
     \label{fig}
     \caption{Srmembers Table}
     \end{figure}
-    \item Srmembers: The Srmembers table includes id, sr-id, user-id, and count. Since the user can reserve a large number of clothes according to each styler, the number of clothes reserved through the count is stored.\\
+    \item Srmembers: The Srmembers table includes id, sr-id, user-id, and count. Since the user can reserve a large number of clothes according to each Styler, the number of clothes reserved through the count is stored.\\
 \end{itemize}
 
 5) How / Why you used it: Using the database, We were able to store all the users, clothes, and reservation information. The necessary information could be obtained through suitable queries. And, we were able to organize the contents of the table and draw specific information needed for the StyleReserve application.\\
 
 \section{Use Cases}
+Below is the overall use case as follows. We found 9 specific use cases while using 'StyleReserve'.\\
+
+\newpage
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=8cm]{UseCase.png}}
 \label{fig}
 \caption{Overall Usecase}
 \end{figure}
-The overall use case looks as follows. We found 9 specific use cases while using 'StyleReserve'.\\
 
 \subsection{Use Case 1: Turn On the Application}
 When the user clicks the 'StyleReserve' application icon, the application is activated, and the splash screen will be shown. If there are no histories of logging in, then after 3 seconds, the screen will move to the login screen. If the user was already logged in, then the screen directly goes to the Main Page, skipping the screens related to the account.\\
@@ -781,8 +786,8 @@ When the user clicks the 'StyleReserve' application icon, the application is act
     \end{figure}
 User creates an account by entering his or her information of [Username, Email, Password, and Password-Confirm]. If the email written is used before, signing up is not possible. Furthermore, if password and password-confim written are not same, signing up is not possible also. Only if the firstly-used email, password same with password-confirm is written, user can create an account. As creating an account succeed, then the data written goes to the database, and stores the new account information.\\
 \begin{itemize}
-    \item Username: The user enters the name to be used, which notifies a nickname within the application. If the name is correctly written without any issue, nothing pops up.
-    \item Email: This e-mail information is used when logging into the application. If the user enters content that has some issue (ex. already used address, not in an email address type, etc.), sign up is not allowed.
+    \item Username: The user enters the name to be used, which notifies a nickname within the application. If the name is correctly written without any issue, nothing pops up.\\
+    \item Email: This e-mail information is used when logging into the application. If the user enters content that has some issue (ex. already used address, not in an email address type, etc.), sign up is not allowed.\\
     \item Password & Password-Confirm: This password information is used when logging in. The password has a rule of combining letterers less than 6 digits. There are also the space to write password one more time, in order to check the password is written in the right way. If password and password-confirm is not same, sign up cannot be possible and cannot move to the succeed page.\\
 \end{itemize}
     
@@ -798,6 +803,7 @@ Users can find the password set when signing up if they forgot his or her passwo
 The user must enter their e-mail(ID) and password in the email and password fields for Login, respectively. The user enters the information in the fields and then press the login button. If the user’s email and password are established, it is approved and allow the user to move to the main page. If the email and password are not established, the message “login failed” appears, and the user should try another method to log in.\\
     
 \subsection{Use Case 5: Main page - Daily Check}
+\newpage
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=4cm]{MainPage Process.png}}
     \label{fig}
@@ -805,7 +811,6 @@ The user must enter their e-mail(ID) and password in the email and password fiel
     \end{figure}
 This is the main page of StyleReserve. The user can check the overall information on the application.\\
 
-\newpage
 \begin{itemize}
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{main_page_process.png}}
@@ -830,7 +835,7 @@ This is the main page of StyleReserve. The user can check the overall informatio
 \end{itemize}
 
 \subsection{Use Case 6: Reserve Styler}
-At Styler Reservation, users make reservations based on the time they want to use the styler, the course they want to use, and the number of clothes to use the styler. You can basically check the reservations you received by passing today's date to the Database, and if you want to see a reservation for another date, you can select a date from the calendar. Reservations can be made in two ways depending on the reservation status.\\
+At Styler Reservation, users make reservations based on the time they want to use the Styler, the course they want to use, and the number of clothes to use the Styler. You can basically check the reservations you received by passing today's date to the Database, and if you want to see a reservation for another date, you can select a date from the calendar. Reservations can be made in two ways depending on the reservation status.\\
 \begin{itemize}
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{add_reserve.png}}
@@ -848,7 +853,7 @@ At Styler Reservation, users make reservations based on the time they want to us
 \end{itemize}
 
 \subsection{Use Case 7: Add new cloth to My Closet}
-My Closet brings up the closet of the styler stored in the database and shows it to the user through the front end. If you have any clothes you want to add in your wardrobe, you will send them to the backend by filling in the input fields such as the clothing's name, brand, item, etc. Once the product has been successfully added to the database, you can proceed if the product appears on the screen and you wish to schedule a clothing styling schedule in the future.\\
+My Closet brings up the closet of the Styler stored in the database and shows it to the user through the front end. If you have any clothes you want to add in your wardrobe, you will send them to the back-end by filling in the input fields such as the clothing's name, brand, item, etc. Once the product has been successfully added to the database, you can proceed if the product appears on the screen and you wish to schedule a clothing styling schedule in the future.\\
 
 \subsection{Use Case 8: Reserve Styling}
 Users can select the clothes they want to reserve for styling in the closet and then move on to the styling reservation system. Styling Schedules, like Styling Schedules, call up a calendar to prompt users to view the schedule history. If a reservation already exists on the date selected by the user, it is designed not to be able to automatically make a reservation. The user writes down the reason for booking the clothes, and the contents are sent to the database and the reservation is successful.\\
@@ -868,7 +873,7 @@ Users can select the clothes they want to reserve for styling in the closet and 
     \caption{Example Button for Each Cloth}
     \end{figure}
     \item Users can scroll through My Closet's clothes and choose the clothes they want to reserve. Each picture of clothing is a type of button, and if the user clicks on a particular clothing, the user can go to the reservation window for the clothing.\\
-    
+
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{sr_3.png}}
     \label{fig}
@@ -876,6 +881,7 @@ Users can select the clothes they want to reserve for styling in the closet and 
     \end{figure}
     \item When the user selects a specific outfit, a calendar appears to help the user select the date he or she wants to reserve. The calendar can be moved to the previous and subsequent months through the arrows on both sides. The date on which the reservation has already been made will not be selected as the gray circle is laid against the background. The date the user clicked on is covered with a red circle in the background and helps the user see that they have chosen.\\
     
+    \newpage
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{sr_4.png}}
     \label{fig}
@@ -883,8 +889,7 @@ Users can select the clothes they want to reserve for styling in the closet and 
     \end{figure}
     \item When a date is clicked, the text at the bottom of the calendar changes from 'Please select a date' to the actual date (e.g. 08/12/2022), which allows the user to check the date he/she chooses through text in addition to changing the numeric background color on the calendar.
     The text box at the bottom is a space that allows users to write the reason for booking clothes, and is designed to prepare for situations where users forget the reason for booking clothes.\\
-    
-    \newpage
+
     \begin{figure}[htbp]
     \centerline{\includegraphics[width=5cm]{sr_5.png}}
     \label{fig}
@@ -897,11 +902,10 @@ Users can select the clothes they want to reserve for styling in the closet and 
     \label{fig}
     \caption{Reservation Notification Box}
     \end{figure}
-    \item In the calendar of the "Overall Styling Reservation" screen, which we saw at the beginning, a dot appeared at the bottom of the number of the date the user newly reserved, indicating that the reservation was successful. By pressing the corresponding button, the user can check the name of the clothing, the photo of the clothing, and the purpose of the clothing reservation. These reservation details can be checked not only by the party who made the reservation, but also by those who share the same wardrobe, i.e., those who use the same styler, preventing duplicate reservations of the same clothes.\\
+    \item In the calendar of the "Overall Styling Reservation" screen, which we saw at the beginning, a dot appeared at the bottom of the number of the date the user newly reserved, indicating that the reservation was successful. By pressing the corresponding button, the user can check the name of the clothing, the photo of the clothing, and the purpose of the clothing reservation. These reservation details can be checked not only by the party who made the reservation, but also by those who share the same wardrobe, i.e., those who use the same Styler, preventing duplicate reservations of the same clothes.\\
     
 \end{itemize}
 
-\newpage
 \subsection{Use Case 9: Notification}
 \begin{itemize}
     \begin{figure}[htbp]
@@ -936,5 +940,15 @@ In the initial planning process, we tried to include not only "reservation" but 
 However, I learned about developing applications through this opportunity, and as I have more time and opportunities in the future, I wanted to study more about it and create an application that reflects all the features I wanted.\\
 In addition, the existing plan was to consider voice recognition services for users who were busy preparing for work and school. It was judged that the Styler is generally placed in the closet, so it has a great impact on the process of wearing clothes, and accordingly, after installing a display outside the Styler, it was intended to induce data such as weather, traffic information, and time through voice recognition linkage. However, the fact that related ideas were actually carried out within LG Electronics, and that there was a little limit to considering displays with our team's technology, and unfortunately, we had no choice but to give up the idea.\\
 If I have a chance, I would like to develop software that can help the overall user's direct and indirect Styler use environment by reflecting the function in the Styler.\\
+
+\clearpage
+\thispagestyle{empty}
+
+\listoftables
+\vspace{2\baselineskip} 
+\listoffigures
+
+\newpage
+\pagenumbering{arabic}
 
 \end{document}
